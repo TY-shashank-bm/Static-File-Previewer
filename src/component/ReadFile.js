@@ -2,7 +2,7 @@ import React from "react";
 import FileViewer from "react-file-viewer";
 import "../App.css";
 import Pdf from "../assets/OPERATORS.pdf";
-import Doc from "../assets/React Example Assignment.docx";
+import Doc from "../assets/file-sample_500kB.docx";
 import Xlsx from "../assets/file_example_XLSX_10.xlsx"
 export default class ReadFile extends React.Component {
   constructor(props) {
@@ -19,8 +19,8 @@ export default class ReadFile extends React.Component {
   }
   render() {
     let fil = new File(["OPERATORS"], "Pdf", { type: "application/pdf" });
-    let xls = new File(["Sheet"], "Xlsx",{type: "xlsx"})
-    let doc = new File(["React Example Assignment"], "Document", {
+    let xls = new File(["Sheet"], "msxl",{type: "xlsx"})
+    let doc = new File(["file-sample_500kb"], "msword", {
       type: "document",
     });
     let inLine;

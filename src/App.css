@@ -1,0 +1,101 @@
+#input{
+  margin-left: 38%;
+}
+.btn{
+  background-color: rgb(189, 189, 189);
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+}
+#close{
+  padding: 0px,10px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: rgb(95, 95, 95);
+
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgb(95, 95, 95);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: 0 0px 0px 0px rgba(255, 255, 255, 0.452),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.8s;
+  text-align: center;
+  overflow-x: hidden;
+}
+#nav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 500;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Add Animation */
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+#viewFile{
+  border: none;
+  padding: 2px,1px;
+  background-color: inherit;
+  border-radius: 5px;
+}
+
+
+#viewFile:hover{
+  background-color: #000000;
+  color: white;
+
+}
+
+
+#table_info {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+#table_info td, #table_info th {
+  border: 1px solid #ddd;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#table_info tr:nth-child(even){background-color: #f2f2f2;}
+
+#table_info tr:hover {background-color: #ddd;}
+
+#table_info th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000000;
+  color: white;
+}
